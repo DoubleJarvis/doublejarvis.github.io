@@ -1,3 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  alert("Hello from js")
+  setTimeout(() => {
+    document.getElementById('js-test').innerText = "This was changed by js"
+  }, 3000);
 })
