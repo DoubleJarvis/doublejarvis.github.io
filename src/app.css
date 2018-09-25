@@ -12,12 +12,38 @@ body {
   left: 50%;
 }
 
-.layer {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  border: 1px solid white;
-  border-radius: 1em;
-  background: rgba(0, 0, 0, 0.3);
+#layer_bg {
+  background-image: url("../img/bg.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  
+  padding: 540px 960px 540px 960px;
+  margin: -540px -960px -540px -960px;
+}
+
+#layer_fg {
+  background-image: url("../img/stickUpCutout.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+  height: 600px;
+  width: 600px;
+
+  -webkit-animation: drum 0.5s linear infinite;
+}
+
+/* animation bs */
+
+@-webkit-keyframes drum {
+  0% { 
+    background-image: url("../img/stickUpCutout.png");
+  }
+  50% { 
+    background-image: url("../img/stickDownCutout.png");
+  }
+  100% {
+    background-image: url("../img/stickUpCutout.png");
+  }
 }
