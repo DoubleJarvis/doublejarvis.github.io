@@ -13,7 +13,7 @@ body {
 }
 
 #layer_bg {
-  background-image: url("src/img/bg.jpg");
+  background-image: url("img/bg.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -23,7 +23,7 @@ body {
 }
 
 #layer_fg {
-  background-image: url("src/img/stickUpCutout.png");
+  background-image: url("img/stickUpCutout.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -38,12 +38,12 @@ body {
 
 @-webkit-keyframes drum {
   0% { 
-    background-image: url("src/img/stickUpCutout.png");
+    background-image: url("img/stickUpCutout.png");
   }
   50% { 
-    background-image: url("src/img/stickDownCutout.png");
+    background-image: url("img/stickDownCutout.png");
   }
   100% {
-    background-image: url("src/img/stickUpCutout.png");
+    background-image: url("img/stickUpCutout.png");
   }
 }
